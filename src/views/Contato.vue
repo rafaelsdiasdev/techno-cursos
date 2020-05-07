@@ -5,8 +5,21 @@
     </div>
     <transition>
       <div v-if="api">
-        <h1>Contato</h1>
-        <p>{{api}}</p>
+        <h1>{{api.titulo}}</h1>
+        <p>{{api.descricao}}</p>
+        <ul></ul>
+        <li>
+          <b>Email:</b>
+          {{api.contato.email}}
+        </li>
+        <li>
+          <b>Telefone:</b>
+          {{api.contato.telefone}}
+        </li>
+        <li>
+          <b>Endereço:</b>
+          {{api.contato.endereco}}
+        </li>
       </div>
     </transition>
   </div>
